@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Profesional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MiProyecto</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button id="btn-dark-mode">🌙</button>
+            <button class="btn-primary" onclick="contactarWhatsApp()">Empezar</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Construye tu Futuro Digital</h1>
+            <p>Aprende a crear sitios web profesionales desde cero con las mejores herramientas.</p>
+            <div class="hero-buttons">
+                <button class="btn-main" onclick="contactarWhatsApp()">Saber más</button>
+                <a href="#contacto" class="btn-secondary">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" style="padding: 100px 5%; text-align: center;">
+        <h2>Nuestros Servicios</h2>
+        <p>Pronto verás aquí nuestras increíbles soluciones.</p>
+    </section>
+
+    <section id="contacto" class="contacto-section">
+        <h2>Contáctanos</h2>
+        <p>Déjanos tu mensaje y te responderemos por email.</p>
+        
+        <form action="https://formspree.io/f/xaqdjqrn" method="POST" id="form-contacto" class="formulario">
+            <div class="input-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="mensaje">Tu Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-enviar">Enviar Información</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
