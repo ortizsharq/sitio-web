@@ -6,18 +6,20 @@ btnDarkMode.addEventListener('click', () => {
     btnDarkMode.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
-// 2. WHATSAPP (Corregido)
+// 2. WHATSAPP (Versión definitiva sin errores)
 function contactarWhatsApp() {
-    // El número debe ir SIN el "+" y SIN guiones
-    const telefono = "5493513139109"; 
-    const mensaje = "Hola! Vi tu sitio web y quiero más información.";
+    // Tu número real de Córdoba, sin símbolos, sin espacios y sin el "+"
+    const miNumero = "5493513139109"; 
     
-    // La estructura debe ser: https://wa.me/NUMERO?text=MENSAJE
-    const url = `https://wa.me/${5493513139109}?text=${encodeURIComponent(mensaje)}`;
+    // El mensaje que quieres recibir
+    const texto = "Hola! Vi tu sitio web y quiero más información.";
     
-    window.open(url, '_blank');
+    // Construimos la URL correctamente
+    const urlFinal = "https://wa.me/" + miNumero + "?text=" + encodeURIComponent(texto);
+    
+    // Abrimos la pestaña
+    window.open(urlFinal, '_blank');
 }
-
 // 3. ENVÍO DE FORMULARIO (Agregué el cierre de llave "});" que faltaba al final)
 const form = document.getElementById('form-contacto');
 
@@ -39,5 +41,6 @@ form.addEventListener('submit', async function(event) {
         alert('Error al enviar. ¿Configuraste bien el ID de Formspree?');
     }
 }); // <--- Faltaba cerrar esta llave y paréntesis
+
 
 
