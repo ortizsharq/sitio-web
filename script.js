@@ -13,7 +13,7 @@ function contactarWhatsApp() {
     const mensaje = "Hola! Vi tu sitio web y quiero más información.";
     
     // La estructura debe ser: https://wa.me/NUMERO?text=MENSAJE
-    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    const url = `https://wa.me/${5493513139109}?text=${encodeURIComponent(mensaje)}`;
     
     window.open(url, '_blank');
 }
@@ -39,4 +39,5 @@ form.addEventListener('submit', async function(event) {
         alert('Error al enviar. ¿Configuraste bien el ID de Formspree?');
     }
 }); // <--- Faltaba cerrar esta llave y paréntesis
+
 
