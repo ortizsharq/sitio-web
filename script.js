@@ -8,7 +8,7 @@ btnDarkMode.addEventListener('click', () => {
 
 // 2. WHATSAPP
 function contactarWhatsApp() {
-    const telefono = "5491122334455"; // Cambia por tu número (código país + número)
+    const telefono = "+54 9 3513 13-9109"; // Cambia por tu número (código país + número)
     const url = `https://wa.me/${telefono}?text=Hola! Quiero más información.`;
     window.open(url, '_blank');
 }
@@ -34,4 +34,5 @@ form.addEventListener('submit', async function(event) {
     } else {
         alert('Error al enviar. ¿Configuraste bien el ID de Formspree?');
     }
+
 });
